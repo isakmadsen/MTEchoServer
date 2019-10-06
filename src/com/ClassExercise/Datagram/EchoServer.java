@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class EchoServer {
 
@@ -13,6 +15,7 @@ public class EchoServer {
 
         ServerSocket serverSocket = null;
         try {
+            ThreadPoolExecutor tpe = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
             serverSocket = new ServerSocket(6969);
             serverSocket.setReuseAddress(true);
 
@@ -23,7 +26,7 @@ public class EchoServer {
                 System.out.println("A new client has connected " + client.getInetAddress().getHostAddress());
                 ClientHandler clientSocket = new ClientHandler(client);
 
-                new Thread(clientSocket).start();
+                tpe.execute(clientSocket);
             }
         } catch (IOException ie) {
             System.out.println("An error has occured, please try again");
