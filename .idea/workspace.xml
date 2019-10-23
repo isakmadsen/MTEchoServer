@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d24f6415-7e0e-40d4-8972-e92af8578158" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MTEchoServer/com/ClassExercise/Datagram/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MTEchoServer/com/ClassExercise/Datagram/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MTEchoServer/com/ClassExercise/Datagram/EchoServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MTEchoServer/com/ClassExercise/Datagram/EchoServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ClassExercise/Datagram/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ClassExercise/Datagram/EchoServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,17 +19,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="18" />
-    <option name="y" value="-19" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
-  </component>
   <component name="ProjectId" id="1Rq2yL7CLscj1Yww31M2NEzXN33" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EchoClient" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,6 +80,8 @@
       <workItem from="1569853153393" duration="1218000" />
       <workItem from="1570275200775" duration="5551000" />
       <workItem from="1570380559609" duration="1000000" />
+      <workItem from="1570382965683" duration="284000" />
+      <workItem from="1571855813311" duration="1718000" />
     </task>
     <servers />
   </component>
@@ -95,7 +93,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -54,7 +55,7 @@ public class EchoServer {
                         output.println(line);
                     }
                 } catch (IOException ie) {
-                    System.out.println("Failed to read text from client");
+                    System.out.println("A client has disconnected");
                     ie.printStackTrace();
                 } finally {
                     try {
@@ -65,8 +66,7 @@ public class EchoServer {
                             input.close();
                             clientSocket.close();
                         }
-                    }catch (IOException ie) {
-                        System.out.println("We pimpin");
+                    } catch (IOException ie) {
                         ie.printStackTrace();
                     }
                 }
